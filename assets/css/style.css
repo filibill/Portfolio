@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Josefin-Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+header{
+    height: 80px;
+    background-color: #3ed8ec;
+    color: #fff;
+}
+.header{
+    max-width: 1140px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 90px;
+}
+.tituloPort{
+    display: flex;
+}
+.tituloPort p{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu li a:hover{
+    color: #B2B2B2
+}
+.menumobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mmline{
+    height: 3px;
+    background-color: #fff;
+}
+
+.banner{
+    height: calc(100vh - 100px);
+    background-image: url('../images/programmer.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.banner .int{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+.banner .intarea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #fff;
+}
+.button{
+    display: inline-block;
+    background-color: #16e016;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.default{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default .section-body{
+    max-width: 1140px;
+    margin: auto;
+}
+.default.light{
+    background-color: #187ec2;
+}
+.default.dark{
+    background-color: #1845c2;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: #fff;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.footer-copy{
+    height: 40px;
+    color: #eee;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.footer-copy a{
+    text-decoration: none;
+    color: #1845c2;
+}
+.footer-copy a:hover{
+    border-bottom: 1px solid #1845c2;
+}
+
+
+
+
+
+
+
+
+.section-aboutme{
+    display: flex;
+}
+.section-aboutme-left{
+    flex: 1;
+}
+.section-aboutme-left p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.section-aboutme-right{
+    width: 520px;
+    text-align: center;
+}
+.section-aboutme-right img{
+    width: 320px;
+}
+
+.section-skills{
+    display: block;
+    text-align: center;
+}
+.section-skills-desc{
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.section-skills-desc p{
+    font-size: 18px;
+}
+.section-skills-logo{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.section-skills-logo img{
+    width: 75px;
+}
+.section-skills-logo h3{
+    margin-top: 5px;
+}
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.section-project-left{
+    flex: 1;
+}
+.section-project-left img{
+    width: 450px;
+}
+.section-project-right{
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+.section-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.section-contact-icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section-contact-icon a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-contact-icon img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+@media(min-width:450px) and (max-width:800px){
+    .logo{
+        margin-left: 20px;
+    }
+    .menumobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .tituloPort{
+        text-align: center;
+        font-size: 20px;
+    }
+    nav{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background-color: #3ed8ec;
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 80px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li {
+        font-weight: bold;
+        height: 90px;
+        font-size: 40px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .banner h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .banner h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section-aboutme{
+        flex-direction: column;
+    }
+    .section-aboutme-left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .section-aboutme-left p{
+        font-size: 20px;
+    }
+    .section-aboutme-right{
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-aboutme-right img{
+        width: 100%;
+    }
+
+    .section-skills-desc p{
+        font-size: 20px;
+    }
+
+    .section-project{
+        flex-direction: column;
+    }
+    .section-project-left img{
+        width: 100%;
+    }
+    .section-project-right{
+        font-size: 20px;
+    }
+    .section-contact{
+        flex-direction: row;
+    }
+    .section-contact-icon{
+        margin-bottom: 20px;
+    }
+    .section-contact-icon img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media(max-width:450px){
+    .logo{
+        margin-left: 20px;
+    }
+    .menumobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .tituloPort{
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background-color: #3ed8ec;
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 80px;
+        right: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li {
+        font-weight: bold;
+        height: 80px;
+        font-size: 30px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .banner h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .banner h2{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .section-aboutme{
+        flex-direction: column;
+    }
+    .section-aboutme-left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .section-aboutme-left p{
+        font-size: 16px;
+    }
+    .section-aboutme-right{
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-aboutme-right img{
+        width: 100%;
+    }
+
+    .section-skills-desc p{
+        font-size: 16px;
+    }
+
+    .section-project{
+        flex-direction: column;
+    }
+    .section-project-left img{
+        width: 100%;
+    }
+    .section-project-right{
+        font-size: 18px;
+    }
+    .section-contact{
+        flex-direction: column;
+    }
+    .section-contact-icon{
+        margin-bottom: 20px;
+    }
+    .section-contact-icon img{
+        width: 80px;
+        height: 80px;
+    }
+}
